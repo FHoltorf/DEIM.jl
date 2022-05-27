@@ -34,7 +34,6 @@ Returns
     * red_f - Vector of symbolic expressions describing the interpolated rows of f
     * red_args - Set of arguments needed to compute red_f
 """
-
 function DEIM_interpolation(U::Matrix, f, args...; ps = Set(), ivs = Set())
     f_symb = f(args...)
     return DEIM_interpolation(U, f_symb, ps = ps, ivs = ivs)
